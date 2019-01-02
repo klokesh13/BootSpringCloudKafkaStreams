@@ -1,4 +1,4 @@
-package com.kaviddiss.streamkafka.stream;
+package com.org.streamkafka.stream;
 
 import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.cloud.stream.annotation.Output;

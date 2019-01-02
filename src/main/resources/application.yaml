@@ -6,8 +6,10 @@ spring:
           brokers: localhost:9092
       bindings:
         greetings-in:
-          destination: greetings
+          destination: greetings-in
           contentType: application/json
         greetings-out:
-          destination: greetings
+          destination: greetings-in
           contentType: application/json
+          
+kafkaTopic: greetings-poster

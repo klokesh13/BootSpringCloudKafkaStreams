@@ -1,7 +1,8 @@
-package com.kaviddiss.streamkafka.service;
+package com.org.streamkafka.service;
 
-import com.kaviddiss.streamkafka.model.Greetings;
-import com.kaviddiss.streamkafka.stream.GreetingsStreams;
+import com.org.streamkafka.model.Greetings;
+import com.org.streamkafka.stream.GreetingsStreams;
+
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.MessageHeaders;
@@ -19,7 +20,8 @@ public class GreetingsService {
     }
 
     public void sendGreeting(final Greetings greetings) {
-        log.info("Sending greetings {}", greetings);
+        //log.info("Sending greetings {}", greetings);
+        System.out.println("Sending greetings {}"+ greetings);
 
         MessageChannel messageChannel = greetingsStreams.outboundGreetings();
         messageChannel.send(MessageBuilder

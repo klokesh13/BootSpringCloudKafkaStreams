@@ -1,4 +1,4 @@
-package com.kaviddiss.streamkafka.model;
+package com.org.streamkafka.model;
 
 // lombok autogenerates getters, setters, toString() and a builder (see https://projectlombok.org/):
 import lombok.Builder;
